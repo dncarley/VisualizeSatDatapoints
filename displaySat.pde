@@ -5,12 +5,11 @@ import processing.opengl.*;
 
 //FullScreen fs; 
 
-
 /// Global data
 int FIRST_RUN = 0;      // 0 --- subsequent run, 1 --- first run(generate new datapoints)
-                        // Select directory for datapoints
+// Select directory for datapoints
 String simulationPath = "/Users/davidcarley/Dropbox/research/project/implementation/molecularSimulation/data/testCNF";
-                        // Default TSV datapoints for subsequent runs
+// Default TSV datapoints for subsequent runs
 String localTSVData = "http://www.cs.rit.edu/~dnc6813/project/applet/sweepDatapoints.tsv";
 //String localTSVData = "sweepDatapoints.tsv";
 
@@ -154,7 +153,7 @@ void draw() {
 
     /// Start *.pdf
     if (savePDF == true) {
-        beginRecord(PDF, currentSelected + ".pdf");
+        beginRecord(PDF, "data/" + currentSelected + ".pdf");
     }
 
     //////////////////////////////////////
