@@ -1,0 +1,25 @@
+README:
+	Visualize Sat Datapoints
+	
+Prerequisites:
+
+	Processing 1.5: http://processing.org/download/
+
+Usage:
+
+	Open `displaySat.pde' with Processing.
+	
+	If loading new data, set `FIRST_RUN' flag to `1'; otherwise set to `0' for subsequent runs.
+	
+	If FIRST_RUN == 1, then set `simulationPath' to data output directory from Molecular Simulation.
+	
+	Otherwise, set `localTSVData' to import condensed `*.tsv' datapoints.
+	
+Run:
+	
+	Execute the sketch from the Processing IDE.
+	
+	Hover metric name with mouse to select data points.  
+	Click metric name to save *.pdf output.
+	Hover and scroll on each axis to scale points.
+	
